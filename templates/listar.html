@@ -10,16 +10,20 @@
     
     {% if palavras %}
     <table>
-        <tr>
-            <th>Palavra em Inglês</th>
-            <th>Tradução em Português</th>
-        </tr>
-        {% for palavra in palavras %}
-        <tr>
-            <td>{{ palavra[0] }}</td>
-            <td>{{ palavra[1] }}</td>
-        </tr>
-        {% endfor %}
+        <thead>
+            <tr>
+                <th>Palavra em Inglês</th>
+                <th>Tradução em Português</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for palavra in palavras %}
+            <tr>
+                <td>{{ palavra[0] }}</td>
+                <td>{{ palavra[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
     {% else %}
     <h2>Não há palavras cadastradas.</h2>
