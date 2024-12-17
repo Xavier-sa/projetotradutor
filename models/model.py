@@ -30,3 +30,16 @@ class DicionarioModel:
             elif busca.lower() == traducao_portugues.lower():
                 return f"A palavra em inglês para '{traducao_portugues}' é: {palavra_ingles}"
         return "Palavra não encontrada."
+
+
+    def excluir_palavra(self, palavra_ingles):
+        if palavra_ingles in self.dicionario:
+            del self.dicionario[palavra_ingles]
+            self.salvar_dicionario()
+            return True
+        return False
+
+    def listar_palavras(self):
+        if not self.dicionario:
+            return "Nenhuma palavra cadastrada."
+        return "\n".join([f"{palavra_ingles} - {traducao_portugues}" for palavra_ingles, traducao_portugues in self.dicionario.items()])

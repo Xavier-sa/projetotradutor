@@ -27,6 +27,25 @@ def procurar():
         resultado = modelo.procurar_palavra(busca)
     return render_template("procurar.html", resultado=resultado)
 
+
+
+@app.route("/listar")
+def listar():
+    palavras = modelo.listar_palavras()  # Lista todas as palavras
+    return render_template("listar.html", palavras=palavras)
+
+@app.route("/excluir", methods=["GET", "POST"])
+def excluir():
+    mensagem = ""
+    if request.method == "POST":
+        palavra_ingles = request.form["palavra_ingles"]
+        sucesso = modelo.excluir_palavra(palavra_ingles)
+        mensagem = f"Palavra '{palavra_ingles}' excluída com sucesso!" if sucesso else "Essa palavra não foi encontrada."
+    return render_template("excluir.html", mensagem=mensagem)
+
+
+
+
 if __name__ == "__main__":
     # Usar a variável de ambiente PORT, que o Render define automaticamente
     port = int(os.environ.get("PORT", 5000))  # 5000 é o valor padrão se não encontrar a variável

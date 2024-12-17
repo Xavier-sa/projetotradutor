@@ -2,20 +2,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Adicionar Palavra</title>
+    <title>Lista de Palavras</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body>
-    <h1>Listar Todas as Palavra</h1>
-    <!-- <form method="POST">
-        <label>Palavra em Inglês:</label>
-        <input type="text" name="palavra_ingles" required><br>
-        <label>Tradução em Português:</label>
-        <input type="text" name="traducao_portugues" required><br>
-        <button type="submit">Adicionar</button>
-    </form> -->
-    <p>{{ mensagem }}</p>
+    <h1>Lista de Palavras Inseridas</h1>
+    <table>
+        <tr>
+            <th>Palavra em Inglês</th>
+            <th>Tradução em Português</th>
+        </tr>
+        {% for palavra in palavras %}
+        <tr>
+            <td>{{ palavra.ingles }}</td>
+            <td>{{ palavra.portugues }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="2">Nenhuma palavra foi adicionada ainda.</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/adicionar">Adicionar Nova Palavra</a><br>
     <a href="/">Voltar</a>
 </body>
 </html>
