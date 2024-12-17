@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from models.model import DicionarioModel
 
@@ -27,4 +28,6 @@ def procurar():
     return render_template("procurar.html", resultado=resultado)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Usar a variável de ambiente PORT, que o Render define automaticamente
+    port = int(os.environ.get("PORT", 5000))  # 5000 é o valor padrão se não encontrar a variável
+    app.run(debug=True, host="0.0.0.0", port=port)
