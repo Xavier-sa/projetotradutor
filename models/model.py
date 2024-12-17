@@ -41,5 +41,5 @@ class DicionarioModel:
 
     def listar_palavras(self):
         if not self.dicionario:
-            return "Nenhuma palavra cadastrada."
-        return "\n".join([f"{palavra_ingles} - {traducao_portugues}" for palavra_ingles, traducao_portugues in self.dicionario.items()])
+            return []  # Retorna uma lista vazia se não houver palavras
+        return list(self.dicionario.items())  # Retorna uma lista de tuplas (palavra_ingles, traducao_portugues)

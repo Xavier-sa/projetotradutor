@@ -1,1 +1,6 @@
-{}
+{
+    "hello": "olá",
+    "world": "mundo",
+    "apple": "maçã",
+    "r": "vermelho"
+}

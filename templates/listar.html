@@ -7,26 +7,28 @@
 </head>
 <body>
     <h1>Lista de Palavras Inseridas</h1>
-    
+
     {% if palavras %}
-    <table>
-        <thead>
-            <tr>
-                <th>Palavra em Inglês</th>
-                <th>Tradução em Português</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for palavra in palavras %}
-            <tr>
-                <td>{{ palavra[0] }}</td>
-                <td>{{ palavra[1] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+        <!-- Só exibe a tabela se a lista de palavras não estiver vazia -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Palavra em Inglês</th>
+                    <th>Tradução em Português</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for palavra in palavras %}
+                    <tr>
+                        <td>{{ palavra[0] }}</td>
+                        <td>{{ palavra[1] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     {% else %}
-    <h2>Não há palavras cadastradas.</h2>
+        <!-- Exibe uma mensagem caso não haja palavras cadastradas -->
+        <h2>Não há palavras cadastradas.</h2>
     {% endif %}
 
     <a href="/">Voltar para a página inicial</a>

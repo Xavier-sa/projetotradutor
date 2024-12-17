@@ -28,11 +28,16 @@ def procurar():
     return render_template("procurar.html", resultado=resultado)
 
 
-
-@app.route("/listar")
+@app.route('/listar')
 def listar():
-    palavras = modelo.listar_palavras()  # Lista todas as palavras
-    return render_template("listar.html", palavras=palavras)
+    palavras = modelo.listar_palavras()  # Pega as palavras corretamente do modelo
+    
+    if palavras == []:
+        palavras = []  # Se não houver palavras, passamos uma lista vazia
+    
+    return render_template('listar.html', palavras=palavras)
+
+
 
 @app.route("/excluir", methods=["GET", "POST"])
 def excluir():
