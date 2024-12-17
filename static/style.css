@@ -7,6 +7,48 @@ body {
     color: #FFFFFF; /* Branco */
     text-align: center;
 }
+/* Menu de navegação */
+nav {
+    background-color: #FF4500; /* Laranja */
+    padding: 15px 0; /* Mais espaço */
+    border-bottom: 5px solid #FFD700; /* Borda amarela */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px; /* Espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700; /* Amarelo */
+    font-size: 2rem; /* Tamanho da fonte grande */
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF4500; /* Laranja */
+    text-shadow: 1px 1px 2px #FFF;
+}
+
+/* Adicionando um efeito de responsividade */
+@media (max-width: 768px) {
+    nav li {
+        display: block; /* Coloca os itens do menu em coluna */
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
 
 h1, h2 {
     font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
