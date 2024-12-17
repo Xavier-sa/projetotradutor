@@ -7,7 +7,42 @@ body {
     color: #FFFFFF; /* Branco */
     text-align: center;
 }
-/* Menu de navegação */
+
+/* Estilo para o Cabeçalho */
+h1, h2 {
+    font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
+    font-size: 2.5rem;
+    color: #FFD700; /* Amarelo forte */
+    text-shadow: 3px 3px 0px #FF4500, 6px 6px 0px #000; /* Laranja e sombra preta */
+}
+
+/* Estilo para os Parágrafos */
+p {
+    font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
+    font-size: 2.5rem;
+    color: #ffd90073; /* Amarelo forte */
+    text-shadow: 3px 3px 0px #ffdd0078, 6px 6px 0px #000; /* Laranja e sombra preta */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #FF4500; /* Laranja */
+    text-shadow: 1px 1px 2px #FFF;
+    background-color: #45a049;
+}
+
+/* Menu de Navegação */
 nav {
     background-color: #FF4500; /* Laranja */
     padding: 15px 0; /* Mais espaço */
@@ -18,6 +53,7 @@ nav ul {
     list-style: none; /* Remove os marcadores de lista */
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 nav li {
@@ -38,7 +74,7 @@ nav a:hover {
     text-shadow: 1px 1px 2px #FFF;
 }
 
-/* Adicionando um efeito de responsividade */
+/* Responsividade do Menu */
 @media (max-width: 768px) {
     nav li {
         display: block; /* Coloca os itens do menu em coluna */
@@ -48,51 +84,6 @@ nav a:hover {
     nav a {
         font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
     }
-}
-
-h1, h2 {
-    font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
-    font-size: 2.5rem;
-    color: #FFD700; /* Amarelo forte */
-    text-shadow: 3px 3px 0px #FF4500, 6px 6px 0px #000; /* Laranja e sombra preta */
-}
-
-p {
-    font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
-    font-size: 2.5rem;
-    color: #ffd90073; /* Amarelo forte */
-    text-shadow: 3px 3px 0px #ffdd0078, 6px 6px 0px #000; /* Laranja e sombra preta */
-
-}
-
-a {
-    text-decoration: none;
-    color: #FFD700;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #FF4500; /* Laranja */
-    text-shadow: 1px 1px 2px #FFF;
-}
-
-/* Menu de navegação */
-nav {
-    background-color: #FF4500; /* Laranja */
-    padding: 10px;
-    border-bottom: 5px solid #FFD700; /* Borda amarela */
-}
-
-nav a {
-    color: #000;
-    margin: 0 15px;
-    font-size: 1.2rem;
-    transition: 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #FFFFFF;
-    text-shadow: 1px 1px 2px #FFD700;
 }
 
 /* Botões */
@@ -144,12 +135,42 @@ input:focus {
     box-shadow: 0px 0px 5px #FFD700;
 }
 
+/* Tabela */
+table {
+    width: 80%;  /* Define a largura da tabela */
+    margin: 20px auto;  /* Centraliza a tabela horizontalmente com margem no topo */
+    border-collapse: collapse;  /* Remove os espaços entre as bordas */
+    background-color: #fff;  /* Cor de fundo branca para a tabela */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombras para dar um efeito */
+}
+
+th, td {
+    padding: 12px;  /* Adiciona espaçamento interno nas células */
+    text-align: left;  /* Alinha o texto à esquerda nas células */
+    border: 1px solid #ddd;  /* Borda de 1px nas células */
+}
+
+th {
+    background-color: #f2f2f2;  /* Cor de fundo para o cabeçalho da tabela */
+    color: #333;  /* Cor do texto no cabeçalho */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Altera a cor de fundo para as linhas pares */
+}
+
 /* Rodapé */
 footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #0C1445; /* Fundo escuro */
-    color: #FFD700;
-    font-size: 0.8rem;
-    border-top: 2px solid #FF4500;
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px 0; /* Espaçamento no topo e na base */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Faz o footer ocupar toda a largura da página */
+}
+
+footer p {
+    margin: 0; /* Remove qualquer margem extra */
+    font-size: 1rem; /* Tamanho de fonte moderado */
 }
