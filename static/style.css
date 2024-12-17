@@ -161,7 +161,7 @@ tr:nth-child(even) {
 
 /* Rodapé */
 footer {
-    background-color: #333; Cor de fundo escura
+    /* background-color: #333; Cor de fundo escura */
     color: #fff; /* Cor do texto branca */
     text-align: center; /* Alinha o texto ao centro */
     padding: 20px 0; /* Espaçamento no topo e na base */
