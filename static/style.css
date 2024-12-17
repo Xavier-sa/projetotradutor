@@ -39,7 +39,7 @@ a {
 a:hover {
     color: #FF4500; /* Laranja */
     text-shadow: 1px 1px 2px #FFF;
-    background-color: #45a049;
+    /* background-color: #45a049; */
 }
 
 /* Menu de Navegação */
@@ -161,7 +161,7 @@ tr:nth-child(even) {
 
 /* Rodapé */
 footer {
-    background-color: #333; /* Cor de fundo escura */
+    background-color: #333; Cor de fundo escura
     color: #fff; /* Cor do texto branca */
     text-align: center; /* Alinha o texto ao centro */
     padding: 20px 0; /* Espaçamento no topo e na base */
