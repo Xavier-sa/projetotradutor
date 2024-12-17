@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Procurar Palavra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Procurar Tradução</h1>
+    <form method="POST">
+        <label>Digite a palavra:</label>
+        <input type="text" name="busca" required><br>
+        <button type="submit">Procurar</button>
+    </form>
+    <p>{{ resultado }}</p>
+    <a href="/">Voltar</a>
+</body>
+</html>
