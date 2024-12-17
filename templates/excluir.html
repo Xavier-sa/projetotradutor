@@ -2,20 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Adicionar Palavra</title>
+    <title>Excluir Palavra</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body>
     <h1>Excluir Palavra</h1>
-    <!-- <form method="POST">
-        <label>Palavra em Inglês:</label>
+    <form method="POST">
+        <label>Digite a palavra em Inglês para excluir:</label>
         <input type="text" name="palavra_ingles" required><br>
-        <label>Tradução em Português:</label>
-        <input type="text" name="traducao_portugues" required><br>
-        <button type="submit">Adicionar</button>
-    </form> -->
+        <button type="submit">Excluir</button>
+    </form>
+
     <p>{{ mensagem }}</p>
-    <a href="/">Voltar</a>
+    <a href="/">Voltar para a página inicial</a>
 </body>
 </html>

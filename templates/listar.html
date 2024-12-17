@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Lista de Palavras Inseridas</h1>
+    
+    {% if palavras %}
     <table>
         <tr>
             <th>Palavra em Inglês</th>
@@ -14,16 +16,15 @@
         </tr>
         {% for palavra in palavras %}
         <tr>
-            <td>{{ palavra.ingles }}</td>
-            <td>{{ palavra.portugues }}</td>
-        </tr>
-        {% else %}
-        <tr>
-            <td colspan="2">Nenhuma palavra foi adicionada ainda.</td>
+            <td>{{ palavra[0] }}</td>
+            <td>{{ palavra[1] }}</td>
         </tr>
         {% endfor %}
     </table>
-    <a href="/adicionar">Adicionar Nova Palavra</a><br>
-    <a href="/">Voltar</a>
+    {% else %}
+    <h2>Não há palavras cadastradas.</h2>
+    {% endif %}
+
+    <a href="/">Voltar para a página inicial</a>
 </body>
 </html>
