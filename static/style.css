@@ -11,7 +11,7 @@ body {
 /* Estilo para o Cabeçalho */
 h1, h2 {
     font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
-    font-size: 2.5rem;
+    font-size: 3rem; /* Aumenta o tamanho para dar mais impacto */
     color: #FFD700; /* Amarelo forte */
     text-shadow: 3px 3px 0px #FF4500, 6px 6px 0px #000; /* Laranja e sombra preta */
 }
@@ -19,15 +19,15 @@ h1, h2 {
 /* Estilo para os Parágrafos */
 p {
     font-family: 'Impact', sans-serif; /* Fonte com estilo DBZ */
-    font-size: 2.5rem;
-    color: #ffd90073; /* Amarelo forte */
+    font-size: 2.5rem; /* Tamanho grande para dar um estilo forte */
+    color: #ffd90073; /* Amarelo forte com transparência */
     text-shadow: 3px 3px 0px #ffdd0078, 6px 6px 0px #000; /* Laranja e sombra preta */
 }
 
 /* Links */
 a {
     text-decoration: none;
-    color: #FFD700;
+    color: #FFD700; /* Amarelo */
     font-weight: bold;
     display: inline-block;
     margin-top: 20px;
