@@ -147,11 +147,11 @@ table {
 th, td {
     padding: 12px;  /* Adiciona espaçamento interno nas células */
     text-align: left;  /* Alinha o texto à esquerda nas células */
-    border: 1px solid #ddd;  /* Borda de 1px nas células */
+    border: 1px solid #c8a91c;  /* Borda de 1px nas células */
 }
 
 th {
-    background-color: #f2f2f2;  /* Cor de fundo para o cabeçalho da tabela */
+    background-color: #c8c07895;  /* Cor de fundo para o cabeçalho da tabela */
     color: #333;  /* Cor do texto no cabeçalho */
 }
 
