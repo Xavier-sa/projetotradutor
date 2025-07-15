@@ -1,5 +1,7 @@
 # README - Projeto Tradutor Inglês-Português
 
+![Capa do Projeto](Xavier-sa/projetotradutor/projeto-tradutor.png)
+
 ## 📌 Visão Geral
 Este projeto é um dicionário digital simples que permite traduzir palavras entre inglês e português, além de oferecer funcionalidades básicas de CRUD (Create, Read, Update, Delete) para gerenciar o vocabulário.
 
