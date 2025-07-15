@@ -1,6 +1,6 @@
 # README - Projeto Tradutor Inglês-Português
 
-![Capa do Projeto](Xavier-sa/projetotradutor/projeto-tradutor.png)
+![Capa do Projeto](https://github.com/Xavier-sa/projetotradutor/blob/main/projeto-tradutor.png)
 
 ## 📌 Visão Geral
 Este projeto é um dicionário digital simples que permite traduzir palavras entre inglês e português, além de oferecer funcionalidades básicas de CRUD (Create, Read, Update, Delete) para gerenciar o vocabulário.
@@ -27,7 +27,7 @@ Este projeto é um dicionário digital simples que permite traduzir palavras ent
 ### Instalação
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/projetotradutor.git
+   git clone https://github.com/Xavier-sa/projetotradutor.git
    cd projetotradutor
    ```
 
